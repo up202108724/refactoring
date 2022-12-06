@@ -1,27 +1,22 @@
 package pt.up.fe.ldts.example5;
 
 public class Turtle {
-    private int row;
-    private int column;
-    private char direction;
+    private Position position;
 
     public Turtle(int row, int column, char direction) {
-        this.row = row;
-        this.column = column;
-        this.direction = direction;
+        position= new Position(row,column, direction);
+    }
+    public void setRow( int row){
+        position.setRow(row);
+    }
+    public void setColumn( int column){
+        position.setColumn(column);
+    }
+    public void setDirection( char direction){
+        position.setDirection(direction);
     }
 
-    public int getRow() {
-        return row;
-    }
 
-    public int getColumn() {
-        return column;
-    }
-
-    public char getDirection() {
-        return direction;
-    }
 
     public void execute(char command) {
         if (command == 'L') { // ROTATE LEFT
