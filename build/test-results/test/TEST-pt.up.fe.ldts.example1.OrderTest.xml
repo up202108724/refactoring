@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pt.up.fe.ldts.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-25T13:47:56" hostname="greyhound-2.local" time="0.019">
+<testsuite name="pt.up.fe.ldts.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-27T00:42:52" hostname="andre-Lenovo-Legion-Y530-15ICH" time="0.017">
   <properties/>
-  <testcase name="printOrder()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.017"/>
-  <testcase name="isElegibleForFreeDelivery()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.001"/>
+  <testcase name="printOrder()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.016"/>
+  <testcase name="isElegibleForFreeDelivery()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

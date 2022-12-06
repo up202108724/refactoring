@@ -19,5 +19,5 @@ public class OrderLine {
     public double getTotal(){return product.getPrice()*quantity;};
 
     //Extract Method to Orderline
-    public String extract_Orderline(){return product.getName() + "(x" + quantity + "): ";}
+    public String extract_Orderline(){return product.getName() + "(x" + quantity + "): " + getTotal() + "\n";}
 }

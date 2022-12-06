@@ -30,7 +30,7 @@ public class Order {
         StringBuffer printBuffer = new StringBuffer();
         for (OrderLine line : lines)
             printBuffer.append(line.extract_Orderline());
-        printBuffer.append("Total" + getTotal());
+        printBuffer.append("Total: " + getTotal());
         return printBuffer.toString();
     }// found code smell that can be solved with Extract Method, in print printBuffer.append(line.getProduct().getName() +"(x" + line.getQuantity() + "): " +(line.getProduct().getPrice() * line.getQuantity()) + "\n");
 }
