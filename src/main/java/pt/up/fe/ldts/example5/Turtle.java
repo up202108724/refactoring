@@ -15,25 +15,29 @@ public class Turtle {
     public void setDirection( char direction){
         position.setDirection(direction);
     }
+    public int getRow() {
+        return position.getRow();
+    }
 
+    public int getColumn() {
+        return position.getColumn();
+    }
 
+    public char getDirection() {
+        return position.getDirection();
+    }
+
+    public void setPosition(Position p){
+        this.position=p;
+    }
 
     public void execute(char command) {
         if (command == 'L') { // ROTATE LEFT
-            if (direction == 'N') direction = 'W';
-            else if (direction == 'W') direction = 'S';
-            else if (direction == 'S') direction = 'E';
-            else if (direction == 'E') direction = 'N';
+            setPosition(new CommandL(position).execute());
         } else if (command == 'R') { // ROTATE RIGHT
-            if (direction == 'N') direction = 'E';
-            else if (direction == 'E') direction = 'S';
-            else if (direction == 'S') direction = 'W';
-            else if (direction == 'W') direction = 'N';
+            setPosition(new CommandR(position).execute());
         } else if (command == 'F'){ // MOVE FORWARD
-            if (direction == 'N') row--;
-            if (direction == 'S') row++;
-            if (direction == 'W') column--;
-            if (direction == 'E') column++;
+            setPosition(new CommandF(position).execute());
         }
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pt.up.fe.ldts.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-06T17:27:00" hostname="andre-Lenovo-Legion-Y530-15ICH" time="0.112">
+<testsuite name="pt.up.fe.ldts.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-17T17:17:18" hostname="andre-Lenovo-Legion-Y530-15ICH" time="0.049">
   <properties/>
-  <testcase name="printOrder()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.11"/>
+  <testcase name="printOrder()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.048"/>
   <testcase name="isElegibleForFreeDelivery()" classname="pt.up.fe.ldts.example1.OrderTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
